@@ -20,7 +20,7 @@ const DEFAULT_FORM = {
   logoUrl: cabslogo,
 
   // ✅ Empty fields
-  invoiceNo: "",
+  invoiceNo: "INV-0",
   invoiceDate: "",
   vehicleNo: "",
   toText: "",
