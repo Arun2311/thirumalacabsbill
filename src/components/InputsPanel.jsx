@@ -94,12 +94,12 @@ export default function InputsPanel({
             </div>
 
             <div className="grid3">
-              <Field label="Qty">
+              <Field label="Descrpition">
                 <input
                   className="input"
                   inputMode="numeric"
-                  value={row.qty}
-                  onChange={(e) => onUpdateRow(row.id, { qty: e.target.value })}
+                  value={row.Descrpition}
+                  onChange={(e) => onUpdateRow(row.id, { Descrpition: e.target.value })}
                 />
               </Field>
               <Field label="Rate">

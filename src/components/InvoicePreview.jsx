@@ -58,7 +58,7 @@ const InvoicePreview = React.forwardRef(function InvoicePreview({ data }, ref) {
         <div className="inv-tr inv-th">
           <div className="c pickup">Pickup Place</div>
           <div className="c drop">Drop Place</div>
-          <div className="c qty right">Qty</div>
+          <div className="c qty right">Descrpition</div>
           <div className="c rate right">Rate</div>
           <div className="c total right">Total</div>
         </div>
@@ -67,7 +67,8 @@ const InvoicePreview = React.forwardRef(function InvoicePreview({ data }, ref) {
           <div className="inv-tr" key={it.id}>
             <div className="c pickup">{it.pickup}</div>
             <div className="c drop">{it.drop}</div>
-            <div className="c qty right">{it.qty}</div>
+            <div className="c qty right">{it.Descrpition
+}</div>
             <div className="c rate right">{formatINR(it.rate)}</div>
             <div className="c total right">{formatINR(it.total)}</div>
           </div>

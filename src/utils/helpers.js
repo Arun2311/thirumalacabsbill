@@ -12,8 +12,7 @@ export function splitLines(text) {
 
 export function calcRowTotal(rate, qty) {
   const r = Number(rate || 0);
-  const q = Number(qty || 0);
-  return r * q;
+  return r ;
 }
 
 export function calcGrandTotal(items) {

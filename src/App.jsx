@@ -4,7 +4,7 @@ import InputsPanel from "./components/InputsPanel";
 import InvoicePreview from "./components/InvoicePreview";
 import { calcRowTotal, uid } from "./utils/helpers";
 import "./App.css"
-import cabslogo from "./assets/cabslogo.jpeg";
+import cabslogo from "./assets/cabslogo.jpg";
 
 
 const LS_KEY = "cab_invoice_form_v1";
@@ -27,7 +27,7 @@ const DEFAULT_FORM = {
   signaturePng: "",
 
   items: [
-    { id: uid(), pickup: "", drop: "", qty: "1", rate: "", total: 0 },
+    { id: uid(), pickup: "", drop: "", Descrpition:"", rate: "", total: 0 },
   ],
 };
 
@@ -62,7 +62,6 @@ export default function App() {
       const total = calcRowTotal(it.rate, it.qty);
       return {
         ...it,
-        qty: String(it.qty ?? ""),
         rate: Number(it.rate || 0),
         total: Number(total || 0),
       };
@@ -90,7 +89,7 @@ export default function App() {
       ...p,
       items: [
         ...p.items,
-        { id: uid(), pickup: "", drop: "", qty: "1", rate: "0", total: 0 },
+        { id: uid(), pickup: "", drop: "", Descrpition: "", rate: "0", total: 0 },
       ],
     }));
   };
