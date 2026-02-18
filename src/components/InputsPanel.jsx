@@ -19,7 +19,7 @@ export default function InputsPanel({
 
   return (
     <div className="panel no-print">
-      <div className="panel-title">Invoice Inputs</div>
+      <div className="panel-title">Invoice Inputs.</div>
 {/* 
       <Field label="Company Name">
         <input className="input" name="companyName" value={form.companyName} onChange={onChange} />
@@ -119,7 +119,7 @@ export default function InputsPanel({
                   disabled={form.items.length === 1}
                   title={form.items.length === 1 ? "At least 1 row required" : "Remove row"}
                 >
-                  Remove
+                  Remove.
                 </button>
                 <div className="hint">Row #{idx + 1}</div>
               </div>
