@@ -4,7 +4,7 @@ import InputsPanel from "./components/InputsPanel";
 import InvoicePreview from "./components/InvoicePreview";
 import { calcRowTotal, uid } from "./utils/helpers";
 import "./App.css"
-import cabslogo from "./assets/cabslogo.jpg";
+import cabslogo from "./assets/cabslogo.jpeg";
 
 
 const LS_KEY = "cab_invoice_form_v1";
