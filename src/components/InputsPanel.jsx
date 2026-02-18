@@ -97,7 +97,7 @@ export default function InputsPanel({
               <Field label="Descrpition">
                 <input
                   className="input"
-                  inputMode="numeric"
+                  // inputMode="numeric"
                   value={row.Descrpition}
                   onChange={(e) => onUpdateRow(row.id, { Descrpition: e.target.value })}
                 />

@@ -24,7 +24,7 @@ export default function SignaturePad({ value, onChange }) {
     ctx.lineWidth = 2;
     ctx.lineCap = "round";
     ctx.lineJoin = "round";
-    ctx.strokeStyle = "#111";
+    ctx.strokeStyle = "#12339e";
 
     // load from base64 if exists
     if (value) {
